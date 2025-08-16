@@ -1,0 +1,12 @@
+type ZoraCreator1155FactoryImpl_SetupNewContract {
+  id: ID!
+  newContract: String!
+  creator: String!
+  defaultAdmin: String!
+  contractURI: String!
+  name: String!
+  defaultRoyaltyConfiguration_0: BigInt!
+  defaultRoyaltyConfiguration_1: BigInt!
+  defaultRoyaltyConfiguration_2: String!
+}
+

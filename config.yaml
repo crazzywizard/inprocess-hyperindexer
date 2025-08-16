@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=./node_modules/envio/evm.schema.json
+name: inprocess-hyper-indexer
+contracts:
+- name: ZoraCreator1155FactoryImpl
+  handler: src/EventHandlers.ts
+  events:
+  - event: SetupNewContract(address indexed newContract, address indexed creator, address indexed defaultAdmin, string contractURI, string name, (uint32,uint32,address) defaultRoyaltyConfiguration)
+networks:
+- id: 8453
+  start_block: 0
+  contracts:
+  - name: ZoraCreator1155FactoryImpl
+    address:
+    - 0x540C18B7f99b3b599c6FeB99964498931c211858
+- id: 84532
+  start_block: 0
+  contracts:
+  - name: ZoraCreator1155FactoryImpl
+    address:
+    - 0x6832A997D8616707C7b68721D6E9332E77da7F6C
+unordered_multichain_mode: true
+preload_handlers: true
