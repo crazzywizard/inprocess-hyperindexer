@@ -1,5 +1,8 @@
 type ZoraCreator1155FactoryImpl_SetupNewContract {
   id: ID!
+  chainId: Int!
+  blockNumber: BigInt!
+  createdAt: String!
   newContract: String!
   creator: String!
   defaultAdmin: String!
@@ -9,4 +12,3 @@ type ZoraCreator1155FactoryImpl_SetupNewContract {
   defaultRoyaltyConfiguration_1: BigInt!
   defaultRoyaltyConfiguration_2: String!
 }
-
